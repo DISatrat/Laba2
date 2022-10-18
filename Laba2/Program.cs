@@ -10,7 +10,7 @@ namespace Laba2
     {
         static void Main(string[] args)
         {
-            N4();
+            N1();
             Console.ReadLine();
         }
 
@@ -23,14 +23,14 @@ namespace Laba2
 
             if (Math.Abs(x1 * x1 + y1 * y1 - r * r) <= Math.Pow(10, -3))
             {
-                Console.WriteLine("точка 1 лежит ");            
+                Console.WriteLine("точка 1 лежит ");
             }
             else
             {
                 Console.WriteLine("точка 1 не лежит ");
             }
 
-            double x2=1.5;
+            double x2 = 1.5;
             double y2 = 0.7;
 
             if (Math.Abs(x2 * x2 + y2 * y2 - r * r) <= Math.Pow(10, -3))
@@ -45,7 +45,7 @@ namespace Laba2
             double x3 = 1;
             double y3 = 1;
 
-            if (Math.Abs(x3 * x3 + y3 * y3 - r * r) <= Math.Pow(10,-3))
+            if (Math.Abs(x3 * x3 + y3 * y3 - r * r) <= Math.Pow(10, -3))
             {
                 Console.WriteLine("точка 3 лежит ");
             }
@@ -64,22 +64,21 @@ namespace Laba2
             else
             {
                 Console.WriteLine("точка 4 не лежит ");
-            }   
+            }
 
         }
         public static void N4()
         {
-            Console.WriteLine("Введите три числа через пробел");
-            string line = Console.ReadLine();
-            string[] splitString = line.Split(' ');
+            Console.WriteLine("Введите число a");
+            double a = double.Parse(Console.ReadLine());
+            Console.WriteLine("Введите число b");
+            double b = double.Parse(Console.ReadLine());
+            Console.WriteLine("Введите число c ");
+            double c = double.Parse(Console.ReadLine());
 
-            double a = Convert.ToDouble(splitString[0]);
-            double b = Convert.ToDouble(splitString[1]);
-            double c = Convert.ToDouble(splitString[2]);
 
-       
 
-            double z = Math.Max(Math.Min(a,b),c);
+            double z = Math.Max(Math.Min(a, b), c);
 
             Console.WriteLine(z);
         }
@@ -87,11 +86,9 @@ namespace Laba2
         public static void N7()
         {
             Console.WriteLine("Введите число x");
-            string line = Console.ReadLine();
-            string[] splitString = line.Split(' ');
 
-            double x = Convert.ToDouble(splitString[0]);
-            double y = 0;
+            double x = int.Parse(Console.ReadLine());
+
 
             if (Math.Abs(x) > 1)
             {
@@ -100,7 +97,7 @@ namespace Laba2
             }
             else
             {
-                Console.WriteLine("y= "+Math.Abs(x));
+                Console.WriteLine("y= " + Math.Abs(x));
             }
         }
     }
