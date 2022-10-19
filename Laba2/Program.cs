@@ -10,7 +10,7 @@ namespace Laba2
     {
         static void Main(string[] args)
         {
-            N1();
+            N4();
             Console.ReadLine();
         }
 
@@ -77,10 +77,27 @@ namespace Laba2
             double c = double.Parse(Console.ReadLine());
 
 
+            double z = 0;
+            double res = 0;
+            if (a > b)
+            {
+                z = b;
+            }
+            else
+            {
+                z = a;
+            }
 
-            double z = Math.Max(Math.Min(a, b), c);
+            if (z > c)
+            {
+                Console.WriteLine(z);
+            }
+            else
+            {
+                Console.WriteLine(c);
+            }
 
-            Console.WriteLine(z);
+            
         }
 
         public static void N7()
